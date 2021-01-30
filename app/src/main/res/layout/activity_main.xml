@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#096E64"
+            android:layout_height="110dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/whatsapp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Whats App"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/whatsapp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/search" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/more"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/more"
+                android:layout_toRightOf="@id/search"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageView
+                android:id="@+id/camera"
+                android:layout_width="72dp"
+                android:layout_height="47dp"
+                android:layout_below="@id/whatsapp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/camera" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chats"
+                android:layout_toRightOf="@id/camera"
+                android:layout_below="@id/whatsapp"
+                android:layout_marginTop="15dp"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:id="@+id/chats"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/status"
+                android:text="Status"
+                android:layout_toRightOf="@id/chats"
+                android:layout_below="@id/whatsapp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="45dp"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/calls"
+                android:text="Calls"
+                android:layout_toRightOf="@id/status"
+                android:layout_below="@id/whatsapp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="50dp"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listview"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
